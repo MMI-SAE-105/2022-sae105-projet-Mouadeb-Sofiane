@@ -5,13 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body>
     <header>
         <img src="public/icon/tinify-2022-11-16T10_17_52/Logo DOTCWORLD 1.webp" alt="#">
-        <h1>Denonciation du monde actuel</h1>
+        <div x-data="{ expanded: false }">
+            <button @click="expanded = ! expanded"><img src="./public/icon/tinify-2022-11-16T10_17_52/Menu .webp" alt="#"></button>
+         
+            <p x-show="expanded" x-collapse>
+                <ul>
+                    <li><a href="./page_musique.html">Une musique interessante</a></li>
+                    <li><a href="./page_livre.html">Le livre pour l’environnement</a></li>
+                    <li><a href="./page_serie.html">La Série qui résume tout</a></li>
+                    <li><a href="./page_lieu.html">le lieu le plus inégalitaire du monde</a></li>
+                    <li><a href="./page_espoir.html">Un grand Espoirs de ce monde</a></li>
+                    <li><a href="./page_regret.html">Un Regret de cette génération</a></li>
+                    <li><a href="./autres_projets.html">Autres Projets</a></li>
+                </ul>
+                <ul>
+                    <li><a href="./glossaire.html">Glossaire</a></li>
+                    <li><a href="./à_propos.html">À propos</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
     </header>
-    <img src="public/img/page d'accueil/tinify-2022-11-15T14_12_8/image accueil.webp" alt="#">
+    <h1>Denonciation du monde actuel</h1>
+    <img class="image_accueil" src="public/img/page d'accueil/tinify-2022-11-15T14_12_8/image accueil.webp" alt="#">
         <p>
             Voici les différents articles qui coincide tous sur un seul et même thème, 
             les détresses du monde actuel. Nous utiliserons sur ce thème différents 
@@ -27,7 +51,8 @@
             Contenu de l’article : Avec ces paroles, l’artiste nous montre que monde est obnubiler par l’argent 
             et la consommation. On peut peut-être parler même de  consommation de masse.
         </p> 
-            <button>En Savoir Plus</button>
+            <a href="./page_musique.html">En Savoir Plus</a>
+            
 
 
     <h2>Le livre pour l’environnement</h2>   
@@ -38,8 +63,8 @@
             sur la pollution de l’air. Mais vu que le livre date de 1998, nous allons voir les tendances 
             de cette époque et les comparer avec les tendances actuelles.
         </p> 
-            <button>En Savoir Plus</button>
-
+            <a href="./page_livre.html">En Savoir Plus</a>
+            
 
     <h2>La Série qui résume tout</h2>   
     <img src="public/img/page d'accueil/tinify-2022-11-15T14_12_8/OnePiece.webp" alt="#">
@@ -48,7 +73,8 @@
             Contenu de l’article : Nous allons voir ce que Oda insinuz dans son oeuvre. Il fait pas mal 
             d’allusions cachés ce qui fait son style intrigant et intéressant de l’oeuvre.
         </p> 
-            <button>En Savoir Plus</button>
+            <a href="./page_serie.html">En Savoir Plus</a>
+            
 
 
     <h2>le lieu le plus inégalitaire du monde</h2>   
@@ -58,7 +84,8 @@
         Contenu de l’article : Nous allons voir pourquoi nous avons choisi ce lieu. L’Afrique Du Sud 
         est le pays le plus inégalitaires du monde.
     </p>
-        <button>En Savoir Plus</button>
+        <a href="./page_lieu.html">En Savoir Plus</a>
+        
 
 
     <h2>Un grand Espoirs de ce monde</h2>
@@ -69,7 +96,8 @@
         Contenu de l’article : Nous allons énumérer pas mal de systéme pour l’aide aux personnes démunies. 
         Notamment avec les associations ou même les cagnottes.        
     </p>
-        <button>En Savoir Plus</button>
+        <a href="./page_espoir.html">En Savoir Plus</a>
+        
 
 
     <h2>Un Regret de cette génération</h2>
@@ -80,7 +108,8 @@
         Contenu de l’article : Nous allons énumérer pas mal d’inègalité dans le mondes. Avec le mauvais accès 
         à l’eau et à la nourriture dans le monde.
     </p>
-        <button>En Savoir Plus</button>
+        <a href="./page_regret.html">En Savoir Plus</a>
+        
 
     
     <footer>
@@ -101,7 +130,7 @@
         <a href="https://www.twitch.tv/unifiedchampions"><img src="public/icon/tinify-2022-11-16T10_17_52/twitch .webp" alt="#"></a>
         <a href="https://www.tiktok.com/@mmi_montbeliard"><img src="public/icon/tinify-2022-11-16T10_17_52/tiktok.webp" alt="#"></a>
         <p>Mon e-mail personnel :</p>
-        <p>sofiane.mouadeb.70000@gmail.com</p> 
+        <a href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=new" target="_blank">sofiane.mouadeb.70000@gmail.com</a>
         <p>Ce projet a été réaliser dans le cadre  d’un exercice pédagogique au 
         <a href="http://mmimontbeliard.com/" target="_blank">dépatement MMI de Montbéliard</a></p>
         <p>Université Nord Franche-Comté</p>

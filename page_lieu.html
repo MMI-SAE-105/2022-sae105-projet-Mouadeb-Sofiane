@@ -5,9 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Lieu</title>
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <header>
     <img src="public/icon/tinify-2022-11-16T10_17_52/Logo DOTCWORLD 1.webp" alt="#">
+    <div x-data="{ expanded: false }">
+        <button @click="expanded = ! expanded"><img src="./public/icon/tinify-2022-11-16T10_17_52/Menu .webp" alt=""></button>
+     
+        <p x-show="expanded" x-collapse>
+            <ul>
+                <li><a href="./page_musique.html">Une musique interessante</a></li>
+                <li><a href="./page_livre.html">Le livre pour l’environnement</a></li>
+                <li><a href="./page_serie.html">La Série qui résume tout</a></li>
+                <li><a href="./page_lieu.html">le lieu le plus inégalitaire du monde</a></li>
+                <li><a href="./page_espoir.html">Un grand Espoirs de ce monde</a></li>
+                <li><a href="./page_regret.html">Un Regret de cette génération</a></li>
+                <li><a href="./autres_projets.html">Autres Projets</a></li>
+            </ul>
+            <ul>
+                <li><a href="./glossaire.html">Glossaire</a></li>
+                <li><a href="./à_propos.html">À propos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+</header>
     <h1>Le lieu le plus inégalitaire du monde</h1>
 <body>
     <p>
@@ -86,7 +110,7 @@
         <a href="https://www.twitch.tv/unifiedchampions"><img src="public/icon/tinify-2022-11-16T10_17_52/twitch .webp" alt="#"></a>
         <a href="https://www.tiktok.com/@mmi_montbeliard"><img src="public/icon/tinify-2022-11-16T10_17_52/tiktok.webp" alt="#"></a>
         <p>Mon e-mail personnel :</p>
-        <p>sofiane.mouadeb.70000@gmail.com</p> 
+        <a href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=new" target="_blank">sofiane.mouadeb.70000@gmail.com</a> 
         <p>Ce projet a été réaliser dans le cadre  d’un exercice pédagogique au 
         <a href="http://mmimontbeliard.com/" target="_blank">dépatement MMI de Montbéliard</a></p>
         <p>Université Nord Franche-Comté</p>
