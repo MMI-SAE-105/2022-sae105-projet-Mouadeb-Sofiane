@@ -1,0 +1,14 @@
+header{
+    background-color: #AF9E9E;
+}
+body {
+    background-color: #FFF3F3;
+}
+footer{
+    background-color: #221F1F; 
+    color: #FFFFFF;
+}
+.image_accueil{
+    width: 376;
+    height: 475;
+}
