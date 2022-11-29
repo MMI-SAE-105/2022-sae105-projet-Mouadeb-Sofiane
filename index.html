@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Accueil</title>
     <link rel="stylesheet" href="src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs%22%3E"></script>
@@ -31,10 +31,15 @@
 </head>
 <body>
     <header>
-        <img src="public/icon/tinify-2022-11-16T10_17_52/Logo DOTCWORLD 1.webp" alt="#">
+        <a href="./index.html"><img src="public/icon/tinify-2022-11-16T10_17_52/Logo DOTCWORLD 1.webp" alt="#"></a>
         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class = "header_menu"><img src="./public/icon/tinify-2022-11-16T10_17_52/Menu .webp" alt="#"></button>
-        <h1>menu</h1>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <ul>
+                <a href="./index.html"><img src="/public/icon/tinify-2022-11-16T10_17_52/croix.webp" alt="#"></a>
+            </ul>
+            <ul>
+                <h1>Menu</h1>
+            </ul>
             <ul>
                 <li><a href="./page_musique.html">Une musique interessante</a></li>
                 <li><a href="./page_livre.html">Le livre pour l’environnement</a></li>
@@ -50,8 +55,8 @@
                 <li><a href="#">Contact</a></li>
             </ul>
             <ul>
-                <li><a href=""><img src="./public/icon/tinify-2022-11-16T10_17_52/FR.webp" alt="#"></a></li>
-                <li><a href=""><img src="./public/icon/tinify-2022-11-16T10_17_52/GB.webp" alt="#"></a></li>
+                <li><a href="./index.html"><img src="./public/icon/tinify-2022-11-16T10_17_52/FR.webp" alt="#"></a></li>
+                <li><a href="./indexGB.html"><img src="./public/icon/tinify-2022-11-16T10_17_52/GB.webp" alt="#"></a></li>
             </ul>
         </nav>         
     </header>
@@ -98,7 +103,7 @@
             
 
 
-    <h2>le lieu le plus inégalitaire du monde</h2>   
+    <h2>Le lieu le plus inégalitaire du monde</h2>   
     <img src="public/img/page d'accueil/tinify-2022-11-15T14_12_8/InégalitéAfrDuSud.webp" alt="#">
     <p>
         Dans cet article, vous retrouverez ma description sur le lieu. Le lieu choisi est l’Afrique du sud.

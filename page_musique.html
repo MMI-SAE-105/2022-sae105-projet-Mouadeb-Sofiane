@@ -6,13 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Musique</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs%22%3E"></script>
+    <style>
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #fff;
+            display: grid;
+            place-content: center;
+        }
+        .header_menuBtn {
+            position: relative;
+            z-index: 10;
+        }
+          .noscroll,
+          .noscroll body {
+            overflow: hidden;
+        }
+    </style>
 </head>
-<header>
-    <img src="public/icon/tinify-2022-11-16T10_17_52/Logo DOTCWORLD 1.webp" alt="#">
-    <div x-data="{ expanded: false }">
-        <button @click="expanded = ! expanded"><img src="./public/icon/tinify-2022-11-16T10_17_52/Menu .webp" alt=""></button>
-     
-        <p x-show="expanded" x-collapse>
+<body>
+    <header>
+        <a href="./index.html"><img src="public/icon/tinify-2022-11-16T10_17_52/Logo DOTCWORLD 1.webp" alt="#"></a>
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class = "header_menu"><img src="./public/icon/tinify-2022-11-16T10_17_52/Menu .webp" alt="#"></button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <ul>
+                <a href="./index.html"><img src="/public/icon/tinify-2022-11-16T10_17_52/croix.webp" alt="#"></a>
+            </ul>
+            <ul>
+                <h1>Menu</h1>
+            </ul>
             <ul>
                 <li><a href="./page_musique.html">Une musique interessante</a></li>
                 <li><a href="./page_livre.html">Le livre pour l’environnement</a></li>
@@ -28,10 +55,11 @@
                 <li><a href="#">Contact</a></li>
             </ul>
             <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li><a href="./index.html"><img src="./public/icon/tinify-2022-11-16T10_17_52/FR.webp" alt="#"></a></li>
+                <li><a href="./indexGB.html"><img src="./public/icon/tinify-2022-11-16T10_17_52/GB.webp" alt="#"></a></li>
             </ul>
-</header>
+        </nav>         
+    </header>
     <h1>Une musique intéressantes</h1>
 <body>
     <p>

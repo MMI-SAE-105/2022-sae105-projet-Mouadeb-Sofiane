@@ -1,35 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="{menuIsOpen:false}": class="{noscroll:menuIsOpen,}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs%22%3E"></script>
+    <style>
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #fff;
+            display: grid;
+            place-content: center;
+        }
+        .header_menuBtn {
+            position: relative;
+            z-index: 10;
+        }
+          .noscroll,
+          .noscroll body {
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <img src="public/icon/tinify-2022-11-16T10_17_52/Logo DOTCWORLD 1.webp" alt="#">
-        <nav>
+        <a href="./indexGB.html"><img src="public/icon/tinify-2022-11-16T10_17_52/Logo DOTCWORLD 1.webp" alt="#"></a>
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class = "header_menu"><img src="./public/icon/tinify-2022-11-16T10_17_52/Menu .webp" alt="#"></button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <ul>
-              <li><a href="./music.html">An interesting music</a></li>
-              <li><a href="./book.html">The book for the environment</a></li>
-              <li><a href="./series.html">The series that sums it all up</a></li>
-              <li><a href="./place.html">Most unequal place in the world</a></li>
-              <li><a href="./hopes.html">A great hope for the world</a></li>
-              <li><a href="./regrets.html">A regret of this generation</a></li>
-              <li><a href="./other_project.html">Other project</a></li>
-              <li><a href="./glossary.html">Glossary</a></li>
-              <li><a href="./about_me.html">About me</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#"><img src="./public/icon/tinify-2022-11-16T10_17_52/FR.webp" alt="#"></a></li>
-              <li><a href="#"><img src="./public/icon/tinify-2022-11-16T10_17_52/GB.webp" alt="#"></a></li>
+                <a href="./indexGB.html"><img src="/public/icon/tinify-2022-11-16T10_17_52/croix.webp" alt="#"></a>
             </ul>
-        </nav>
+            <ul>
+                <h1>Menu</h1>
+            </ul>
+            <ul>
+                <li><a href="./music.html">An interesting music</a></li>
+                <li><a href="./book.html">The book for the environment</a></li>
+                <li><a href="./series.html">The series that sums it all up</a></li>
+                <li><a href="./place.html">Most unequal place in the world</a></li>
+                <li><a href="./hopes.html">A great hope for the world</a></li>
+                <li><a href="./regrets.html">A regret of this generation</a></li>
+                <li><a href="./other_project.html">Other project</a></li>
+            </ul>
+            <ul> 
+                <li><a href="./glossary.html">Glossary</a></li>
+                <li><a href="./about_me.html">About me</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul> 
+            <ul>
+                <li><a href="./index.html"><img src="./public/icon/tinify-2022-11-16T10_17_52/FR.webp" alt="#"></a></li>
+                <li><a href="./indexGB.html"><img src="./public/icon/tinify-2022-11-16T10_17_52/GB.webp" alt="#"></a></li>
+            </ul>
     </header>
     <h1>Denunciation of the current world</h1>
-    <img src="public/img/page d'accueil/tinify-2022-11-15T14_12_8/image accueil.webp" alt="#">
-        <p>
+    <img src="./public/img/page d'accueil/tinify-2022-11-15T14_12_8/image accueil.webp" alt="">
+           <p>
             Here are the different articles which all coincide on one and the same theme, the distresses of the 
             present world. 
             We will use different types of content on this theme. There will be an article against a music, 
