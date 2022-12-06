@@ -1,0 +1,39 @@
+/* Mise en forme du bouton de menu "Hamburger" */
+.menu {
+    position: fixed;
+    inset: 0;
+    background-color:#1C467A;
+    z-index: 1;
+}
+
+.menu-btn {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    margin-top: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.menu-btnbar,
+.menu-btnbar::before,
+.menu-btnbar::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #292525;
+    display: block;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+}
+
+.menu-btnbar::before {
+    top: -10px;
+}
+
+.menu-btn__bar::after {
+    top: 10px;
+}
