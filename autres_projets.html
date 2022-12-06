@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="{ menuIsOpen:false }">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,15 +31,18 @@
 </head>
 <body>
     <header>
-        <a href="./index.html"><img src="public/icon/tinify-2022-11-16T10_17_52/Logo DOTCWORLD 1.webp" alt="#"></a>
-        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class = "header_menu"><img src="./public/icon/tinify-2022-11-16T10_17_52/Menu .webp" alt="#"></button>
+        <<a href="./index.html">
+            <img class="menu-accueil"src="public/icon/tinify-2022-11-16T10_17_52/Logo DOTCWORLD 1.webp" alt="#">
+        </a>
+        <button @click="menuIsOpen = ! menuIsOpen">
+            <img aria-controls="mainNav"  class="header_menu" src="./public/icon/tinify-2022-11-16T10_17_52/Menu .webp" alt="#">
+        </button>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-            <ul>
-                <a href="./index.html"><img src="/public/icon/tinify-2022-11-16T10_17_52/croix.webp" alt="#"></a>
-            </ul>
-            <ul>
-                <h1>Menu</h1>
-            </ul>
+    
+            <button @click="menuIsOpen = ! menuIsOpen">
+                <img src="/public/icon/tinify-2022-11-16T10_17_52/croix.webp" alt="#">
+            </button>
+            <h2>Menu</h2>
             <ul>
                 <li><a href="./page_musique.html">Une musique interessante</a></li>
                 <li><a href="./page_livre.html">Le livre pour l’environnement</a></li>
