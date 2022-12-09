@@ -1,20 +1,17 @@
-p {
-  border: 2px solid #ccc;
-  font-size: 15px;
-  line-height: 4;
-}
-  
-.icon {
-  display: flex;
-  flex-direction: row;
-}
-.ms {
-  max-width: 80;
+.logo_ms {
+  max-width: 90px;
   height: auto;
 }
-p {
-  border: 2px solid #ccc;
-  font-size: 15px;
-  line-height: 150px;
+
+.icon {
+  display: flex;
 }
-  
+
+.logo__texte_ms{
+  display: flex;
+}
+.twitch{}
+.twitter{}
+.tiktok{}
+.youtube{}
+

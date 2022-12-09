@@ -1,0 +1,16 @@
+header{
+    background-color: #AF9E9E;
+}
+.logo_principal{
+    width: 150px;
+    height: auto;
+}
+
+.header_menu{
+    position: absolute;
+    top: 6%;
+    right: 5%;
+    background-color: #AF9E9E;
+    cursor: pointer;
+}
+

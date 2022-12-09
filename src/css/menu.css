@@ -1,39 +1,34 @@
-/* Mise en forme du bouton de menu "Hamburger" */
 .menu {
     position: fixed;
-    inset: 0;
-    background-color:#1C467A;
-    z-index: 1;
-}
-
-.menu-btn {
-    width: 40px;
-    height: 30px;
-    position: relative;
-    margin-top: 2%;
-    margin-right: 2%;
-    margin-bottom: 2%;
-    justify-content: space-between;
-    z-index: 2;
-}
-
-.menu-btnbar,
-.menu-btnbar::before,
-.menu-btnbar::after {
-    content: "";
-    height: 2px;
-    width: 100%;
-    background-color: #292525;
-    display: block;
-    position: absolute;
+    top: 0;
     left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #af9e9e;
+    display: grid;
+    place-content: center;
+}
+.header_menuBtn {
+    position: relative;
     z-index: 10;
 }
-
-.menu-btnbar::before {
-    top: -10px;
+  .noscroll,
+  .noscroll body {
+    overflow: hidden;
 }
 
-.menu-btn__bar::after {
-    top: 10px;
+.flag_fr {
+    position: absolute;
+    bottom: 230px;
+    right: 140px;
+}
+
+.flag_gb {
+    position: absolute;
+    bottom: 218px;
+    right: 200px;
+}
+
+.text-align_menu{
+    display: flex;
 }
