@@ -10,8 +10,22 @@
 .logo__texte_ms{
   display: flex;
 }
-.twitch{}
-.twitter{}
-.tiktok{}
-.youtube{}
+.twitch{
+  padding-left: 15px;
+}
+.facebook{
+  padding-left: 15px;
+}
+.instagram{
+  padding-left: 15px;
+}
+.twitter{
+  padding-left: 15px;
+}
+.tiktok{
+  padding-left: 4px;
+}
+.youtube{
+  padding-left: 15px;
+}
 
