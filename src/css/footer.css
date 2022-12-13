@@ -10,22 +10,22 @@
 .logo__texte_ms{
   display: flex;
 }
-.twitch{
+.icon_twitch{
   padding-left: 15px;
 }
-.facebook{
+.icon_facebook{
   padding-left: 15px;
 }
-.instagram{
+.icon_instagram{
   padding-left: 15px;
 }
-.twitter{
+.icon_twitter{
   padding-left: 15px;
 }
-.tiktok{
+.icon_tiktok{
   padding-left: 4px;
 }
-.youtube{
+.icon_youtube{
   padding-left: 15px;
 }
 
