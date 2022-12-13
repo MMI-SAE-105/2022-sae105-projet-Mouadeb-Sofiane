@@ -8,13 +8,15 @@ header{
 
 .header_menu{
     position: absolute;
-    top: 6%;
-    right: 5%;
+    top: 50px;
+    right: 12px;
     background-color: #AF9E9E;
     cursor: pointer;
 }
 .icon_cross_menu{
     border: none;   
     background-color: #af9e9e;
+    top: 50px;
+    right: 12px;
 }
 
