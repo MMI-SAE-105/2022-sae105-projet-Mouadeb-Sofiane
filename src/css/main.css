@@ -1,3 +1,10 @@
 p {
     margin-bottom: 10px;
 }
+.text-accueil{
+    margin: 30px;
+}
+.ensavoirplusbtn{
+    display: flex;
+    
+}
