@@ -13,4 +13,8 @@ header{
     background-color: #AF9E9E;
     cursor: pointer;
 }
+.icon_cross_menu{
+    border: none;   
+    background-color: #af9e9e;
+}
 
