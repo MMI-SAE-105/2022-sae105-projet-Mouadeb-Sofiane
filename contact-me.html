@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen:false }">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs%22%3E"></script>
+    <style>
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #af9e9e;
+            display: grid;
+            place-content: center;
+        }
+        .header_menuBtn {
+            position: relative;
+            z-index: 10;
+        }
+          .noscroll,
+          .noscroll body {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="./index.html">
+            <img class="logo_principal"src="public/icon/tinify-2022-11-16T10_17_52/Logo DOTCWORLD 1.webp" alt="Logo du Site Internet">
+        </a>
+        <button class="header_menu btndumenu" @click="menuIsOpen = ! menuIsOpen">
+            <img aria-controls="mainNav" src="./public/icon/tinify-2022-11-16T10_17_52/Menu .webp" alt="Icone de menu">
+        </button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+    
+            <button class="icon_cross_menu" @click="menuIsOpen = ! menuIsOpen">
+                <img class="icon_cross_menu" src="/public/icon/tinify-2022-11-16T10_17_52/croix.webp" alt="Icone croix pour quitter le menu">
+            </button>
+            <h2>Menu</h2>
+            <ul>
+                <li class="header_text"><a href="./page_musique.html">Une musique interessante</a></li>
+                <li><a href="./page_livre.html">Le livre pour l’environnement</a></li>
+                <li><a href="./page_serie.html">La Série qui résume tout</a></li>
+                <li><a href="./page_lieu.html">le lieu le plus inégalitaire du monde</a></li>
+                <li><a href="./page_espoir.html">Un grand Espoirs de ce monde</a></li>
+                <li><a href="./page_regret.html">Un Regret de cette génération</a></li>
+                <li><a href="./autres_projets.html">Autres Projets</a></li>
+            </ul>
+            <div class="trait_séparation_menu"><hr></div>
+            <div class="text-align_menu">
+            <ul>
+                <a href="./glossaire.html">Glossaire</a>
+                <a href="./à_propos.html">À propos</a>
+                <a href="./page_contact.html">Contact</a>
+            </ul>
+            </div>
+            <ul>
+                <a href="./index.html"><img class="flag_fr"src="./public/icon/tinify-2022-11-16T10_17_52/FR.webp" alt="Icone pour passer dans la langue francaise"></a>
+                <a href="./indexGB.html"><img class="flag_gb" src="./public/icon/tinify-2022-11-16T10_17_52/GB.webp" alt="Icone pour passer dans la langue anglaise"></a>
+            </ul>
+        </nav>
+    </header>
+        <div class="container">
+            <div class="row">
+                    <h1 style="text-align:center">Contact us</h1>
+            </div>
+            <div class="row">
+                    <h4 style="text-align:center">If you have anything to make us look good.</h4>
+                        <h4 style="text-align:center">Put it all here.</h4>
+            </div>
+            <div class="row input-container">
+                    <div class="col-xs-12">
+                        <div class="styled-input wide">
+                            <input type="text" required />
+                            <label>Name</label> 
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="styled-input">
+                            <input type="text" required />
+                            <label>Email</label> 
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="styled-input">
+                            <input type="text" required />
+                            <label>Phone Number</label> 
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-xs-12">
+                        <div class="styled-input wide1">
+                            <textarea required></textarea>
+                            <label>Message</label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-xs-12">
+                        <div class="btn-lrg submit-btn">Send Message</div>
+                    </div>
+            </div>
+        </div>
