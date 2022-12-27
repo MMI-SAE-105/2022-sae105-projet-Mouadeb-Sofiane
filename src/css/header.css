@@ -14,9 +14,13 @@ header{
     cursor: pointer;
 }
 .icon_cross_menu{
+    position: absolute;
+    bottom: 95px;
+    left: 140px;
     border: none;   
     background-color: #af9e9e;
-    top: 50px;
-    right: 12px;
 }
-
+.imgcross {
+    position: relative;
+    z-index: 10;
+}
