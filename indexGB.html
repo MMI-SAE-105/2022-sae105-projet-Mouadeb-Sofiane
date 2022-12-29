@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" x-data="{menuIsOpen:false}">
+<html lang="en" x-data="{ menuIsOpen:false }">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/styles.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs%22%3E"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,500;1,500&family=Karma:wght@400;500&family=Kdam+Thmor+Pro&family=Laila:wght@400;500&family=Lato:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,500;1,500&family=Karma:wght@400;500&family=Kdam+Thmor+Pro&family=Laila:wght@400;500&family=Lato:ital,wght@0,700;1,700&display=swap');
+        font-family: 'K2D', sans-serif;
+        font-family: 'Karma', serif;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        font-family: 'Laila', sans-serif;
+        font-family: 'Lato', sans-serif;
+    </style>
     <style>
         .menu {
             position: fixed;
@@ -15,7 +25,7 @@
             left: 0;
             width: 100vw;
             height: 100vh;
-            background: #fff;
+            background-color: #af9e9e;
             display: grid;
             place-content: center;
         }
@@ -32,38 +42,41 @@
 <body>
     <header>
         <a href="./indexGB.html">
-            <img class="menu-accueil"src="public/icon/tinify-2022-11-16T10_17_52/Logo DOTCWORLD 1.webp" alt="#">
+            <img class="logo_principal"src="public/icon/tinify-2022-11-16T10_17_52/Logo DOTCWORLD 1.webp" alt="Logo of the WebSite">
         </a>
-        <button @click="menuIsOpen = ! menuIsOpen">
-            <img aria-controls="mainNav"  class="header_menu" src="./public/icon/tinify-2022-11-16T10_17_52/Menu .webp" alt="#">
+        <button class="header_menu btndumenu" @click="menuIsOpen = ! menuIsOpen">
+            <img aria-controls="mainNav" src="./public/icon/tinify-2022-11-16T10_17_52/Menu .webp" alt="Icon of the menu">
         </button>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
     
-            <button @click="menuIsOpen = ! menuIsOpen">
-                <img src="/public/icon/tinify-2022-11-16T10_17_52/croix.webp" alt="#">
+            <button class="icon_cross_menu imgcross" @click="menuIsOpen = ! menuIsOpen">
+                <img class="icon_cross_menu" src="/public/icon/tinify-2022-11-16T10_17_52/croix.webp" alt="#">
             </button>
             <h2>Menu</h2>
             <ul>
-                <li><a href="./music.html">An interesting music</a></li>
-                <li><a href="./book.html">The book for the environment</a></li>
-                <li><a href="./series.html">The series that sums it all up</a></li>
-                <li><a href="./place.html">Most unequal place in the world</a></li>
-                <li><a href="./hopes.html">A great hope for the world</a></li>
-                <li><a href="./regrets.html">A regret of this generation</a></li>
-                <li><a href="./other_project.html">Other project</a></li>
+                <li class="header_text"><a href="./music.html" style="color: #000000">An interesting music</a></li>
+                <li><a href="./book.html" style="color: #000000">The book for the environment</a></li>
+                <li><a href="./series.html" style="color: #000000">The Series that sums it all up</a></li>
+                <li><a href="./place.html" style="color: #000000">Most unequal place in the world</a></li>
+                <li><a href="./hopes.html" style="color: #000000">A great hope for the world</a></li>
+                <li><a href="./regrets.html" style="color: #000000">A regret of this generation</a></li>
+                <li><a href="./other_project.html" style="color: #000000">Other project</a></li>
             </ul>
-            <ul> 
-                <li><a href="./glossary.html">Glossary</a></li>
-                <li><a href="./about_me.html">About me</a></li>
-                <li><a href="./contact-me.html">Contact</a></li>
-            </ul> 
+            <hr width="110%">
             <ul>
-                <li><a href="./index.html"><img src="./public/icon/tinify-2022-11-16T10_17_52/FR.webp" alt="#"></a></li>
-                <li><a href="./indexGB.html"><img src="./public/icon/tinify-2022-11-16T10_17_52/GB.webp" alt="#"></a></li>
+                <a href="./glossary.html" style="color: #000000" class="gac">Glossary</a>
+                <a href="./about_me.html" style="color: #000000" class="gac">About me</a>
+                <a href="./contact-me.html" style="color: #000000" class="gac">Contact</a>
             </ul>
+            <ul>
+                <a href="./index.html"><img class="flag_fr"src="./public/icon/tinify-2022-11-16T10_17_52/FR.webp" alt="Icone pour passer dans la langue francaise"></a>
+                <a href="./indexGB.html"><img class="flag_gb" src="./public/icon/tinify-2022-11-16T10_17_52/GB.webp" alt="Icone pour passer dans la langue anglaise"></a>
+            </ul>
+        </nav>         
     </header>
+
     <h1>Denunciation of the current world</h1>
-    <img src="./public/img/page d'accueil/tinify-2022-11-15T14_12_8/image accueil.webp" alt="">
+    <img class="image_accueil" src="./public/img/page d'accueil/tinify-2022-11-15T14_12_8/image accueil.webp" alt="">
            <p>
             Here are the different articles which all coincide on one and the same theme, the distresses of the 
             present world. 
@@ -74,90 +87,127 @@
 
     <h2>An interesting music</h2> 
     <img src="public/img/page d'accueil/tinify-2022-11-15T14_12_8/Hakai Img Akuma Album.webp" alt="#">  
-        <p>
-            In this article, you will find the description of the lyrics of Hakai's music Satellite.
-            Content of the article: With these lyrics, the artist shows us that the world is obnibulated 
+    <div class="col-size">
+        <br>
+        <p class="text-accueil">
+            In this article, you will find the description of the lyrics of Hakai's music Satellite.</p>
+        <p class="text-accueil"> Content of the article: With these lyrics, the artist shows us that the world is obnibulated 
             by money and consumption. Perhaps we can even talk about mass consumption. 
         </p> 
-            <a href="./music.html"><button>Learn more</button></a>
+            <a href="./music.html"><button class="ensavoirplusbtn">Learn more</button></a>
+            <br>
+    </div> 
+    <br>    
 
 
     <h2>The book for the environment</h2>   
     <img src="public/img/page d'accueil/tinify-2022-11-15T14_12_8/Livre APPA.webp" alt="#">
-        <p>
-            In this article, you will find my description of the book made by APPA, its title is "Air pollution".
-            Content of the article: We will see what APPA tells us about air pollution. But as the book dates from 
+    <div class="col-size">
+        <br>
+        <p class="text-accueil">
+            In this article, you will find my description of the book made by APPA, its title is "Air pollution".</p>
+        <p class="text-accueil"> Content of the article: We will see what APPA tells us about air pollution. But as the book dates from 
             1998, we will see the trends from that time and compare them with the current trends.
         </p> 
-            <a href="./book.html"><button>Learn more</button></a>
+            <a href="./book.html"><button class="ensavoirplusbtn">Learn more</button></a>
+            <br>
+    </div> 
+    <br>   
 
 
     <h2>The Series that sums it all up</h2>   
     <img src="public/img/page d'accueil/tinify-2022-11-15T14_12_8/OnePiece.webp" alt="#">
-        <p>
-            In this article, you will find my description of the One Piece series created by Eiichirō Oda.
-            Content of the article: We'll see what Oda is up to in his work. He makes a lot of hidden allusions 
+    <div class="col-size">
+        <br>
+        <p class="text-accueil">
+            In this article, you will find my description of the One Piece series created by Eiichirō Oda.</p>
+        <p class="text-accueil">Content of the article: We'll see what Oda is up to in his work. He makes a lot of hidden allusions 
             which makes his style intriguing and interesting.
         </p> 
-        <a href="./series.html"><button>Learn more</button></a>
+            <a href="./series.html"><button class="ensavoirplusbtn">Learn more</button></a>
+            <br>
+    </div> 
+    <br>   
 
 
     <h2>Most unequal place in the world</h2>   
     <img src="public/img/page d'accueil/tinify-2022-11-15T14_12_8/InégalitéAfrDuSud.webp" alt="#">
-    <p>
-        In this article, you will find my description of the place. The chosen place is South Africa.
-        Content of the article: We will see why we chose this place. South Africa is the most insecure country 
+    <div class="col-size">
+        <br>
+    <p class="text-accueil">
+        In this article, you will find my description of the place. The chosen place is South Africa.</p>
+    <p class="text-accueil"> Content of the article: We will see why we chose this place. South Africa is the most insecure country 
         in the world.
     </p>
-        <a href="./place.html"><button>Learn more</button></a>
+        <a href="./place.html"><button class="ensavoirplusbtn">Learn more</button></a>
+        <br>
+    </div> 
+    <br>   
 
 
     <h2>A great hope for the world</h2>
     <img src="public/img/page d'accueil/tinify-2022-11-15T14_12_8/AidesHumanitaires.webp" alt="#">
-    <p>
+    <div class="col-size">
+        <br>
+    <p class="text-accueil">
         In this article you will find my description of a hope of my generation. My hope is the people who help the most 
-        disadvantaged.
-        Content of the article: We are going to enumerate a lot of systems to help the poor. In particular with the 
+        disadvantaged.</p>
+    <p class="text-accueil"> Content of the article: We are going to enumerate a lot of systems to help the poor. In particular with the 
         associations or even the kitty.
     </p>
-        <a href="./hopes.html"></a><button>Learn more</button></a>
+        <a href="./hopes.html"></a><button class="ensavoirplusbtn">Learn more</button></a>
+        <br>
+    </div> 
+    <br>   
 
 
     <h2>A regret of this generation</h2>
     <img src="public/img/page d'accueil/tinify-2022-11-15T14_12_8/MauvaisAccèsRessouces.webp" alt="#">
-    <p>
+    <div class="col-size">
+        <br>
+    <p class="text-accueil">
         In this article, you will find my description of a regret of my generation. My regret is on the theme of 
-        inequality in the world of food.
-        Content of the article: We will list a lot of inequalities in the world. With the poor access to water and 
+        inequality in the world of food.</p>
+    <p class="text-accueil"> Content of the article: We will list a lot of inequalities in the world. With the poor access to water and 
         food in the world.
     </p>
-        <a href="./regrets.html"></a><button>Learn more</button></a>
+        <a href="./regrets.html"></a><button class="ensavoirplusbtn">Learn more</button></a>
+        <br>
+    </div> 
+    <br>   
 
 
     <footer>
-        <img src="public/icon/tinify-2022-11-16T10_17_52/MS.webp" alt="#">
-        <h3>WebSite created by Sofiane Mouadeb in class from MMI Montbéliard</h3>
+        <div class="logo__texte_ms">
+            <img class="logo_ms" src="public/icon/tinify-2022-11-16T10_17_52/MS.webp" alt="Logo du créateur du site">
+            <h3 class="created_by_footer">WebSite created by Sofiane Mouadeb in class from MMI Montbéliard</h3>
+        </div>
         <h2>Menu</h2>
-        <p>Legal notice</p>
+         <p>Legal notice</p>
         <p>Contact</p>    
         <p>Contact</p> 
         <p>4 Place Tharradin</p>
-        <p>25200 Montbéliard</p>    
-        
+        <p>25200 Montbéliard</p>      
         <h4>Follow l'IUT MMI</h4>
-        <a href="https://fr-fr.facebook.com/mmimontbeliard/"><img src="public/icon/tinify-2022-11-16T10_17_52/facebook 1.webp" alt="#"></a>
-        <a href="https://twitter.com/mmimontbeliard"><img src="public/icon/tinify-2022-11-16T10_17_52/twitter 1.webp" alt="#"></a>
-        <a href="https://www.instagram.com/mmi_montbeliard/?hl=fr"><img src="public/icon/tinify-2022-11-16T10_17_52/instagram 1.webp" alt="#"></a>
-        <a href="https://www.youtube.com/channel/UCgW7jR8McJwjxPh0fDQaXGg/videos?app=desktop"><img src="public/icon/tinify-2022-11-16T10_17_52/youtube 1.webp" alt="#"></a>
-        <a href="https://www.twitch.tv/unifiedchampions"><img src="public/icon/tinify-2022-11-16T10_17_52/twitch .webp" alt="#"></a>
-        <a href="https://www.tiktok.com/@mmi_montbeliard"><img src="public/icon/tinify-2022-11-16T10_17_52/tiktok.webp" alt="#"></a>
-        <p>My mail personal :</p>
-        <a href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=new" target="_blank">sofiane.mouadeb.70000@gmail.com</a> 
-        <p>This project was carried out as part of an educational exercise at 
-        <a href="http://mmimontbeliard.com/" target="_blank">the MMI department in Montbéliard.</a></p>
-        <p>University Nord Franche-Comté</p>
-        <a href="http://mmimontbeliard.com/" target="_blank">IUT MMI Montbéliard</a></p>
-        <img src="public/icon/tinify-2022-11-16T10_17_52/mmi logo.webp" alt="#">
+        <div class="icon">
+            <div class="icon_facebook"><a href="https://fr-fr.facebook.com/mmimontbeliard/"><img src="/public/icon/tinify-2022-11-16T10_17_52/facebook 1.webp" alt="logo facebook"></a></div>
+            <div class="icon_twitter"><a href="https://twitter.com/mmimontbeliard"><img src="public/icon/tinify-2022-11-16T10_17_52/twitter 1.webp" alt="logo twitter"></a></div>
+            <div class="icon_instagram"><a href="https://www.instagram.com/mmi_montbeliard/?hl=fr"><img src="public/icon/tinify-2022-11-16T10_17_52/instagram 1.webp" alt="logo instagram"></a></div>     
+            <div class="icon_youtube"><a href="https://www.youtube.com/channel/UCgW7jR8McJwjxPh0fDQaXGg/videos?app=desktop"><img src="public/icon/tinify-2022-11-16T10_17_52/youtube 1.webp" alt="logo youtube"></a></div>     
+            <div class="icon_twitch"><a href="https://www.twitch.tv/unifiedchampions"><img src="public/icon/tinify-2022-11-16T10_17_52/twitch .webp" alt="logo twitch"></a></div>
+            <div class="icon_tiktok"><a href="https://www.tiktok.com/@mmi_montbeliard"><img src="public/icon/tinify-2022-11-16T10_17_52/tiktok.webp" alt="logo facebook"></a></div>
+        </div>
+            <p>My mail personal :</p>
+            <a href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=new" style="color: #56A99F" target="_blank">
+                <p class="footer_link">
+                    sofiane.mouadeb.70000@gmail.com</a>
+                </p>
+            <p>This project was carried out as part of an educational exercise at
+            <a href="http://mmimontbeliard.com/" style="color: #56A99F" class="footer_link" target="_blank">the MMI department in Montbéliard.</a></p>
+            <p>University Nord Franche-Comté</p>
+            <a href="http://mmimontbeliard.com/" style="color: #56A99F" class="footer_link" target="_blank">IUT MMI Montbéliard</a></p>
+            <img src="./public/icon/tinify-2022-11-16T10_17_52/mmi logo.webp" alt="Logo MMI Montbéliard">
     </footer>
 </body>
 </html>
+
