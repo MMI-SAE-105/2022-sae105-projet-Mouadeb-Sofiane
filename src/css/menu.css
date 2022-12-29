@@ -8,6 +8,15 @@
     display: grid;
     place-content: center;
 }
+
+hr{
+    border: 1px solid #000000;
+}
+.gac{
+    text-align: center;
+    margin: 3%;
+}
+
 .header_menuBtn {
     position: relative;
     z-index: 10;
@@ -32,9 +41,7 @@
 .text-align_menu{
     display: flex;
 }
-.trait_séparation_menu{
-    border-top: 1px solid #000;
-}
+
 
 .btndumenu{
     border: none;

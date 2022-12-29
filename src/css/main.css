@@ -1,12 +1,22 @@
 p {
     margin-bottom: 10px;
+    font-family:"Karma", sans-serif;
 }
 .text-accueil{
     margin: 30px;
 }
+.col-size {
+    max-width: 90%;
+    width: 100%;    
+    background: #AF9E9E;
+    right: 5%;
+    margin-left: 5%;
+  }
 .ensavoirplusbtn{
     margin: 0 auto;
     display: block;
+    border-radius: 7px;
+    background-color: #AAB4D5;
 }
 input {
     background-color: #2d2d2d;
