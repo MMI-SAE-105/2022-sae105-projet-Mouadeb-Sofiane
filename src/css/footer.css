@@ -12,6 +12,7 @@
 }
 .icon_twitch{
   padding-left: 15px;
+  margin-top: -1%;
 }
 .icon_facebook{
   padding-left: 15px;
@@ -21,12 +22,15 @@
 }
 .icon_twitter{
   padding-left: 15px;
+  margin-top: 1%;
 }
 .icon_tiktok{
   padding-left: 4px;
+  margin-top: -2%;
 }
 .icon_youtube{
   padding-left: 15px;
+  margin-top: 1.2%;
 }
 
 
