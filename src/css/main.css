@@ -12,6 +12,9 @@ p {
     margin-bottom: 10px;
     font-family:"Karma", sans-serif;
 }
+li{
+    list-style-image:url(/public/icon/tinify-2022-11-16T10_17_52/flèchepetite.png);
+}
 .text-accueil{
     margin: 30px;
 }

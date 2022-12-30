@@ -15,7 +15,7 @@ header{
 }
 .icon_cross_menu{
     position: absolute;
-    bottom: 95px;
+    bottom: 620%;
     left: 140px;
     border: none;   
     background-color: #af9e9e;
@@ -23,4 +23,15 @@ header{
 .imgcross {
     position: relative;
     z-index: 10;
+}
+
+.ululul{
+    margin-bottom: 56%;
+}
+.icon_cross_menu_gb{
+    position: absolute;
+    bottom: 620%;
+    left: 140px;
+    border: none;   
+    background-color: #af9e9e;
 }
