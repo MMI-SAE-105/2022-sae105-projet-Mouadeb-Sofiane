@@ -32,14 +32,14 @@ hr{
 
 .flag_fr {
     position: absolute;
-    bottom: 230px;
-    right: 140px;
+    bottom: 23%;
+    right: 28%;
 }
 
 .flag_gb {
     position: absolute;
-    bottom: 218px;
-    right: 200px;
+    bottom: 21.5%;
+    left: 28%;
 }
 
 .text-align_menu{
