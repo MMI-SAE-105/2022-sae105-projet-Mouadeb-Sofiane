@@ -2,7 +2,12 @@
   max-width: 90px;
   height: auto;
 }
-
+.h3footer{
+  margin: 30px;
+}
+.h4footer{
+  margin: 13px;
+}
 .icon {
   display: flex;
 }
