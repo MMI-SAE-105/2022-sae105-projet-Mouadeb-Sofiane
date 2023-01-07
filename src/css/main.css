@@ -21,6 +21,7 @@ p {
 }
 li{
     list-style-image:url(/public/icon/tinify-2022-11-16T10_17_52/flèchepetite.png);
+    line-height: 35px;
 }
 .text-accueil{
     margin: 30px;
