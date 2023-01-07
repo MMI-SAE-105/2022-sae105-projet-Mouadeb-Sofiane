@@ -4,13 +4,20 @@ h1{
 }
 h3{
     font-family: "lato", sans-serif;
+    margin: 5px;
 }
 h2{
     font-family: "K2D", sans-serif;
+    margin: 5px;
+}
+h4 {
+    font-family: "lato", sans-serif;
+    margin: 5px;
 }
 p {
     margin-bottom: 10px;
     font-family:"Karma", sans-serif;
+    margin: 10px;
 }
 li{
     list-style-image:url(/public/icon/tinify-2022-11-16T10_17_52/flèchepetite.png);
